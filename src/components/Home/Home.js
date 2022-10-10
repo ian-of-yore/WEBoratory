@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeHeader from '../HomeHeader/HomeHeader';
 
 const Home = () => {
     return (
         <div>
-            <p className='text-3xl font-bold text-center'>This is the Home Component</p>
+            <HomeHeader></HomeHeader>
         </div>
     );
 };
