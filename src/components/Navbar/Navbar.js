@@ -13,7 +13,7 @@ const Navbar = () => {
                 <div className='flex text-2xl font-bold'>
                     <Link to='/'>Home</Link>
                     <Link className='mx-4' to='/blog'>Blog</Link>
-                    <Link to='/about'>About</Link>
+                    <Link to='/stats'>Statistics</Link>
                 </div>
             </div>
         </div>

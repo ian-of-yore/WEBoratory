@@ -1,13 +1,14 @@
 import React from 'react';
 
-const Options = ({ options }) => {
+const Options = ({ options, id, handleAnswer, handleClickedQues }) => {
+
     return (
-        <div>
-            <div className='grid grid-cols-2 gap-4'>
-                <p>{options[0]}</p>
-                <p>{options[1]}</p>
-                <p>{options[2]}</p>
-                <p>{options[3]}</p>
+        <div className='w-11/12 mx-auto'>
+            <div className='grid grid-cols-2 gap-3'>
+                <p onClick={() => handleClickedQues(id)}>{options[0]}</p>
+                <p onClick={() => handleClickedQues(id)}>{options[1]}</p>
+                <p onClick={() => handleClickedQues(id)}>{options[2]}</p>
+                <p onClick={() => handleClickedQues(id)}>{options[3]}</p>
             </div>
         </div>
     );
