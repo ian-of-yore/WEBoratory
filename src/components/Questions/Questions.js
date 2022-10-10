@@ -1,15 +1,27 @@
 import React from 'react';
+import { useState } from 'react';
 import SingleQuestion from '../SingleQuestion/SingleQuestion';
+
 
 const Questions = ({ questions }) => {
 
-    console.log(questions)
 
     const handleClickedQues = (event, id) => {
         const clickedOption = event.target.innerText
         const matched = questions.find(question => question.id === id)
         const correctAnswer = matched.correctAnswer;
-        console.log(clickedOption, correctAnswer)
+        if (clickedOption === correctAnswer) {
+            alert("hoise")
+        }
+        else {
+            alert("Hoy nai")
+        }
+    }
+
+    const handleShowAnswer = (id) => {
+        const clickedQeustion = questions.find(question => question.id === id);
+        const answer = clickedQeustion.correctAnswer;
+        alert(answer)
     }
 
     return (
@@ -19,6 +31,7 @@ const Questions = ({ questions }) => {
                     key={ques.id}
                     ques={ques}
                     handleClickedQues={handleClickedQues}
+                    handleShowAnswer={handleShowAnswer}
                 ></SingleQuestion>)
             }
         </div>
