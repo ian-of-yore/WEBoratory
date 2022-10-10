@@ -1,20 +1,10 @@
 import React from 'react';
 import Options from '../Options/Options';
 
-const SingleQuestion = ({ ques }) => {
+const SingleQuestion = ({ ques, handleClickedQues }) => {
     const { question, options, correctAnswer, id } = ques;
 
-    // const handleAnswer = (event) => {
-    //     const clickedAnswer = event.target.innerText;
-    //     console.log(clickedAnswer);
-    // }
 
-    console.log(ques)
-
-    const handleClickedQues = (event, id) => {
-        const lmao = event.target.innerText
-        console.log(id, lmao)
-    }
 
     return (
         <div className='w-9/12 mx-auto mb-10'>
