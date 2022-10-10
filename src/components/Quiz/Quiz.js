@@ -1,12 +1,14 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import QuizQuestions from '../QuizQuestions/QuizQuestions';
 
 const Quiz = () => {
     const quizData = useLoaderData();
-    console.log(quizData)
+    const quizes = quizData.data;
+
     return (
         <div>
-            <p>This is the Quiz Component</p>
+            <QuizQuestions quizes={quizes}></QuizQuestions>
         </div>
     );
 };
