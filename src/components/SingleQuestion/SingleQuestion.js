@@ -16,11 +16,11 @@ const SingleQuestion = ({ ques, handleClickedQues, handleShowAnswer }) => {
                     <p onClick={() => handleShowAnswer(id)} className='fa-light fa-icons'><FontAwesomeIcon className='h-6 w-6' icon={faEye}></FontAwesomeIcon></p>
                 </div>
                 {
-                    <div className='grid grid-cols-2 gap-3'>
-                        <p className='shadow-lg p-2' onClick={(event) => handleClickedQues(event, id)}>O {options[0]}</p>
-                        <p className='shadow-lg p-2' onClick={(event) => handleClickedQues(event, id)}>O {options[1]}</p>
-                        <p className='shadow-lg p-2' onClick={(event) => handleClickedQues(event, id)}>O {options[2]}</p>
-                        <p className='shadow-lg p-2' onClick={(event) => handleClickedQues(event, id)}>O {options[3]}</p>
+                    <div className='grid sm:grid-cols-2 gap-3'>
+                        <p className='shadow-lg p-2 hover:bg-orange-500 active:bg-orange-800 hover:text-white rounded-lg' onClick={(event) => handleClickedQues(event, id)}>{options[0]}</p>
+                        <p className='shadow-lg p-2 hover:bg-orange-500 active:bg-orange-800 hover:text-white rounded-lg' onClick={(event) => handleClickedQues(event, id)}>{options[1]}</p>
+                        <p className='shadow-lg p-2 hover:bg-orange-500 active:bg-orange-800 hover:text-white rounded-lg' onClick={(event) => handleClickedQues(event, id)}>{options[2]}</p>
+                        <p className='shadow-lg p-2 hover:bg-orange-500 active:bg-orange-800 hover:text-white rounded-lg' onClick={(event) => handleClickedQues(event, id)}>{options[3]}</p>
                     </div>
                 }
 
