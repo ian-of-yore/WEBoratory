@@ -3,7 +3,7 @@
 ## Live Website: https://weboratory-yellowsubmarine.netlify.app/
 
 ## Overview
- This is a optimised website to help aspiring and old-school Web Developers with their learning, testing and training to get them one step ahead in the Web-Dev industry. We foucs on incorporating new and well established technology accessible for developers of all levels. Want to learn something new? Brush up on some basics? Prepare for your dream job? We've got you. 
+ This is an optimised website to help aspiring and old-school Web Developers with their learning, testing and training to get them one step ahead in the Web-Dev industry. We foucs on incorporating new and well established technology accessible for developers of all levels. Want to learn something new? Brush up on some basics? Prepare for your dream job? We've got you. 
 
 ## Features:
     ### Hand-Picked the best interview questions that you can practice on the go
