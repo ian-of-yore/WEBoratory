@@ -21,11 +21,11 @@ const Blog = () => {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Under the hood React works with a virtual DOM (Document Object Model) where it keeps track of
-                            the HTML contents as a tree and runs diff computations on the nodes. Whenever React detects a
-                            change in the Virtual DOM, it checks where the change happened in the Actual DOM by using diff
-                            algorithm and then changes just that certain portion of the DOM. Thus making the overall process
-                            super fast compared to other frameworks.
+                            React Router is an API for React applications. React Router uses component structure to call components, which display the appropriate information.
+                            The main purpose of React Router is that is allows us to build a single-page web application with navigation without the page refreshing as the user navigates.
+                            React Router, and dynamic, client-side routing system. By preventing a page refresh, and using Router or Link, the flash of a white screen or blank page is prevented.
+                            This is one increasingly common way of having a more seamless user experience.
+
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -37,11 +37,10 @@ const Blog = () => {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Props in React.js are used to pass data from one component to another. Whereas, state is used
-                            to store and set data for a certain component. It can't be used to pass data from component to
-                            componenet. The state works locally for a certain component. Another major difference between props
-                            and state is that props are read only, meaning they are immutable, they can't be changed. In contrast,
-                            state is mutable, they can be changed. Furthermore, state changes can be asynchronous.
+                            The contecxt API of React allows one to share state across the entire app (or part of it) lightly and with ease.
+                            It enables the developer to exchange unique details and assists in solving prop-drilling from all levels of application.
+                            The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on.
+
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -53,19 +52,22 @@ const Blog = () => {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            There are 5 other uses of useEffect other than fetching API data. They are:
-                            <ol>
-                                <li><span className=''>Validating input field:</span> Whilst the input is being stored in a state using useState,
-                                    the validation takes place every time the input changes, giving immediate feedback to the user.</li>
-                                <li><span className=''>Live filtering:</span> useEffect can be used to filter an array "on the fly" by typing letters
-                                    into an input element.</li>
-                                <li><span className=''>Trigger animation on new array value:</span> useEffect hook can also be used to trigger an animation on a
-                                    shopping cart as a side effect of adding a new product to it.</li>
-                                <li><span className=''>Fetched API data update:</span> useEffect can trigger a state update due to an updated fetch() call.
-                                    by sending the fetched data to a child component, and whenever that data is changed,
-                                    the child component re-process it.</li>
-                                <li><span className=''>Updating fetched API data based on Time Dependency:</span> useEffect can be used to fetch new data from an API every (n) seconds.
-                                    The child component useEffect receives the time as dependency and every time that dependency changes, a new fetch() is triggered.</li>
+                            The useRef Hook allows the developer to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated.
+                            It can be used to access a DOM element directly. It offers the developer a much suitable alternate to useState and solves the problem of re-rendering that comes with using useState.
+                            This useRef hook can be declared by using <br /> <code className='text-center text-lg'>const refContainer = useRef(initialValue);</code>. <br />
+                            useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+                            A common use case is to access a child imperatively. <br />
+                            The main three features of useRef are:
+                            <ol className='list-decimal pl-16 mt-4'>
+                                <li>
+                                    <span className='text-lg font-semibold'>It allows mutable values.</span>
+                                </li>
+                                <li>
+                                    <span className='text-lg font-semibold'>Accessing DOM elements.</span>
+                                </li>
+                                <li>
+                                    <span className='text-lg font-semibold'>Updating references restriction</span>
+                                </li>
                             </ol>
                         </p>
                     </AccordionItemPanel>
