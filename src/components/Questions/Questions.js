@@ -4,7 +4,6 @@ import SingleQuestion from '../SingleQuestion/SingleQuestion';
 
 const Questions = ({ questions }) => {
 
-
     const handleClickedQues = (event, id) => {
         const clickedOption = event.target.innerText
         const matched = questions.find(question => question.id === id)
@@ -15,6 +14,7 @@ const Questions = ({ questions }) => {
         else {
             alert("Hoy nai")
         }
+        // console.log(clickedOption, correctAnswer)
     }
 
     const handleShowAnswer = (id) => {

@@ -5,14 +5,13 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const SingleQuestion = ({ ques, handleClickedQues, handleShowAnswer }) => {
     const { question, options, id } = ques;
-
-
+    const questionRegEX = question.replace(/(<([^>]+)>)/ig, '');
 
     return (
         <div className='w-9/12 mx-auto mb-10'>
             <div className='border-4 p-4 rounded-lg'>
                 <div className='flex mb-2 items-center justify-between'>
-                    <p className='mr-4'><span className='text-xl font-bold'>Question:</span> <span className='text-lg font-semibold'>{question}</span></p>
+                    <p className='mr-4'><span className='text-xl font-bold'>Question:</span> <span className='text-lg font-semibold'>{questionRegEX}</span></p>
                     <p onClick={() => handleShowAnswer(id)} className='fa-light fa-icons'><FontAwesomeIcon className='h-6 w-6' icon={faEye}></FontAwesomeIcon></p>
                 </div>
                 {
