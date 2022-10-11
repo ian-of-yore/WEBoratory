@@ -5,16 +5,20 @@ import SingleQuestion from '../SingleQuestion/SingleQuestion';
 const Questions = ({ questions }) => {
 
     const handleClickedQues = (event, id) => {
-        const clickedOption = event.target.innerText
-        const matched = questions.find(question => question.id === id)
-        const correctAnswer = matched.correctAnswer;
-        if (clickedOption === correctAnswer) {
+
+        const clickedOption = event.target.innerText;
+        const matched = questions.find(question => question.id === id);
+        const correctAnswer = matched.correctAnswer.split(" ")
+
+        const actualAnswerArr = correctAnswer.filter(item => item !== "");
+        const actualAnswerStr = actualAnswerArr.join(" ");
+
+        if (clickedOption === actualAnswerStr) {
             alert("hoise")
         }
         else {
             alert("Hoy nai")
         }
-        // console.log(clickedOption, correctAnswer)
     }
 
     const handleShowAnswer = (id) => {
