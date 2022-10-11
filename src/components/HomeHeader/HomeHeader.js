@@ -11,7 +11,7 @@ const HomeHeader = () => {
                 <div className='sm:col-span-2 py-8 px-10 text-gray-100'>
                     <p className='text-4xl font-semibold mb-3'>WEBoratory</p>
                     <p className='text-2xl font-medium'>The ultimate resource to prepare for coding interviews. Everything you need, in one streamlined platform.</p>
-                    <button className='border-2 bg-gray-700 text-white p-2 rounded-lg text-xl font-semibold mt-5 hover:bg-stone-500'>Start Your Journey</button>
+                    <button className='border-2 bg-gray-800 text-white p-2 rounded-lg text-xl font-semibold mt-5 hover:bg-orange-900'>Start Your Journey</button>
                 </div>
 
             </div>

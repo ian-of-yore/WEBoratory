@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import logo from '../../images/logo.jpg'
+import logo from '../../images/download.png'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -34,7 +34,7 @@ export default function Example() {
                             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                                 <div className="flex flex-shrink-0 items-center py-2">
                                     <img
-                                        className="block h-16 w-auto"
+                                        className="block h-8 w-9 bg-white rounded-full mr-2"
                                         src={logo}
                                         alt="Your Company"
                                     />
