@@ -1,5 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+// import { ToastContainer, toast } from 'react-toastify';
 import SingleQuestion from '../SingleQuestion/SingleQuestion';
+
 
 
 const Questions = ({ questions }) => {
@@ -14,21 +18,24 @@ const Questions = ({ questions }) => {
         const actualAnswerStr = actualAnswerArr.join(" ");
 
         if (clickedOption === actualAnswerStr) {
-            alert("hoise")
+            toast("Correct Answer")
         }
         else {
-            alert("Hoy nai")
+            toast("Wrong Answer")
         }
     }
 
     const handleShowAnswer = (id) => {
         const clickedQeustion = questions.find(question => question.id === id);
         const answer = clickedQeustion.correctAnswer;
-        alert(answer)
+        toast(answer)
     }
 
     return (
         <div className='my-10'>
+            <div>
+                <Toaster />
+            </div>
             {
                 questions.map(ques => <SingleQuestion
                     key={ques.id}
@@ -37,6 +44,7 @@ const Questions = ({ questions }) => {
                     handleShowAnswer={handleShowAnswer}
                 ></SingleQuestion>)
             }
+
         </div>
     );
 };
